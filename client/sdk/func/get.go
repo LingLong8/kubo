@@ -1,16 +1,17 @@
-package sdk
+package _func
 
 import (
 	"bufio"
 	"compress/gzip"
 	"errors"
 	"fmt"
+	"io"
+	gopath "path"
+
 	"github.com/ipfs/boxo/coreiface/path"
 	"github.com/ipfs/boxo/files"
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	"github.com/ipfs/kubo/core/commands/cmdenv"
-	"io"
-	gopath "path"
 )
 
 var ErrInvalidCompressionLevel = errors.New("compression level must be between 1 and 9")

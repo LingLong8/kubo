@@ -1,8 +1,12 @@
-package sdk
+package _func
 
 import (
 	"errors"
 	"fmt"
+	"path"
+	gopath "path"
+	"strings"
+
 	coreiface "github.com/ipfs/boxo/coreiface"
 	"github.com/ipfs/boxo/coreiface/options"
 	"github.com/ipfs/boxo/files"
@@ -11,9 +15,6 @@ import (
 	ipld "github.com/ipfs/go-ipld-format"
 	"github.com/ipfs/kubo/core/commands/cmdenv"
 	mh "github.com/multiformats/go-multihash"
-	"path"
-	gopath "path"
-	"strings"
 )
 
 const adderOutChanSize = 8
